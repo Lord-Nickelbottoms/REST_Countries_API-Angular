@@ -1,0 +1,12 @@
+<div *ngFor="let item of countriesData; let i = index">
+    <div class="card" style="width: 18rem;">
+        <img src="{{countriesData[i].flags.png}}" class="card-img-top" alt="..." style="width: 60px; height: auto;">
+        <div class="card-body">
+          <h5 class="card-title">{{countriesData[i].name.official}}</h5>
+          <h6 class="card-title">Capital: {{countriesData[i].capital}}</h6>
+          <p class="card-text">Continent: {{countriesData[i].continents}}</p>
+          <p class="card-text">Sub Region: {{countriesData[i].subregion}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+</div>
